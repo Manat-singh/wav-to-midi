@@ -1,4 +1,4 @@
-from businesslogic.wav_to_midi import WavToMidi
+from wav_to_midi import WavToMidi
 
 
 # handler to call the convert logic

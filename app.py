@@ -1,7 +1,7 @@
 from ast import Try
 from flask import Flask, render_template, request, send_file
 import requests
-from handlers.handlers import Convert
+from handlers import Convert
 
 # initialize flask app
 app = Flask(__name__)
