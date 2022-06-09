@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/upload.css"/>
+  </head>
+  <body>
+	<h1>WAV to MIDI Convertor</h1>
+    <form
+      action="http://localhost:5000/uploader"
+      method="POST"
+      enctype="multipart/form-data"
+      class="file-upload-form"
+    >
+      <h2>Upload file to convert</h1>
+      <input type="file" name="file" />
+      <input type="submit" value="Convert" />
+    </form>
+	
+	<h1>OR</h1>
+	
+	<form
+      action="http://localhost:5000/upload_wav_link"
+      method="POST"
+	  enctype="application/x-www-form-urlencoded"
+      class="file-upload-form"
+	 >
+      <h2>Provide a link to a wav</h2>
+      <input type="text" name="wavLink"id="wavLink"/> &nbsp; &nbsp;
+      <input type="submit" value="Convert" />
+    </form>
+	
+  </body>
+</html>
